@@ -36,3 +36,8 @@ Runs tests in console, in browser or with coverage.
 ### `lint`, `prettier`
 
 Runs linting and formatting for all files in `src` folder.
+
+## Task 2 Serving SPA in AWS
+
+[CloudFront URL (disabled)](https://dieajxnhukiiy.cloudfront.net)
+[S3 Bucket (disabled)](https://infrastack-websitebucket75c24d94-it7pij7gqnmy.s3.us-east-1.amazonaws.com/index.html)
