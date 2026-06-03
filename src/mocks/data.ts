@@ -70,6 +70,8 @@ export const cart: CartItem[] = [
 export const orders: Order[] = [
   {
     id: "1",
+    userId: "user-1",
+    cartId: "cart-1",
     address: {
       address: "some address",
       firstName: "Name",
@@ -80,12 +82,18 @@ export const orders: Order[] = [
       { productId: "7567ec4b-b10c-48c5-9345-fc73c48a80aa", count: 2 },
       { productId: "7567ec4b-b10c-45c5-9345-fc73c48a80a1", count: 5 },
     ],
+    payment: {},
+    comments: "",
+    status: OrderStatus.Open,
+    total: 123,
     statusHistory: [
       { status: OrderStatus.Open, timestamp: Date.now(), comment: "New order" },
     ],
   },
   {
     id: "2",
+    userId: "user-2",
+    cartId: "cart-2",
     address: {
       address: "another address",
       firstName: "John",
@@ -93,6 +101,10 @@ export const orders: Order[] = [
       comment: "Ship fast!",
     },
     items: [{ productId: "7567ec4b-b10c-48c5-9345-fc73c48a80aa", count: 3 }],
+    payment: {},
+    comments: "",
+    status: OrderStatus.Sent,
+    total: 72,
     statusHistory: [
       {
         status: OrderStatus.Sent,
