@@ -87,7 +87,7 @@ export default function PageOrder() {
       <Typography variant="h6">Change status:</Typography>
       <Box py={2}>
         <Formik
-          initialValues={{ status: lastStatusItem.status, comment: "" }}
+          initialValues={{ status: lastStatusItem?.status || order.status, comment: "" }}
           enableReinitialize
           onSubmit={(values) =>
             updateOrderStatus(
